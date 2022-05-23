@@ -26,7 +26,7 @@ import com.example.EmployeeManagementSystemSpringbootProject.repository.Employee
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/springboot-rest-api/v1")
 public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
@@ -55,7 +55,7 @@ public class EmployeeController {
 		Employee employee = employeeRepository.findById(employeeId)
 				.orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
 
-		employee.setEmailId(employeeDetails.getEmailId());
+		employee.setDesignation(employeeDetails.getDesignation());
 		employee.setLastName(employeeDetails.getLastName());
 		employee.setFirstName(employeeDetails.getFirstName());
 		final Employee updatedEmployee = employeeRepository.save(employee);
