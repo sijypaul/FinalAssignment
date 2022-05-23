@@ -21,8 +21,10 @@ public class Employee {
 	@Column(name = "last_name", nullable = false)
     private String lastName;
 	
-	@Column(name = "email_address", nullable = false)
-    private String emailId;
+	
+	
+	@Column(name = "designation", nullable = false)
+    private String designation;
 	
 	@Column(name ="salary", nullable = false)
     private long salary;
@@ -31,10 +33,10 @@ public class Employee {
 
     }
 
-    public Employee(String firstName, String lastName, String emailId) {
+    public Employee(String firstName, String lastName, String designation) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.emailId = emailId;
+        this.designation = designation;
     }
 
     
@@ -62,11 +64,11 @@ public class Employee {
     }
 
     
-    public String getEmailId() {
-        return emailId;
+    public String getDesignation() {
+        return designation;
     }
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
+    public void setDesignation(String designation) {
+        this.designation = designation;
     }
 
 	public long getSalary() {
@@ -79,7 +81,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", emailId=" + emailId
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", Designation=" + designation
 				+ ", salary=" + salary + "]";
 	}
     
