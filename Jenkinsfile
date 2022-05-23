@@ -17,7 +17,7 @@ pipeline
         {
             steps 
             {
-                bat "mvn package -f FinalAssignment "
+                bat "mvn install package -f FinalAssignment "
             }
         }
     }
