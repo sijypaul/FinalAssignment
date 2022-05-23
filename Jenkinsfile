@@ -26,7 +26,7 @@ pipeline
         {
             steps 
             {
-                echo ' docker build -t springio/Employee-Management-System-Springboot-Project-0.0.1-SNAPSHOT.jar-openjdk:11-alpine
+                echo 'docker build -t springio/Employee-Management-System-Springboot-Project-0.0.1-SNAPSHOT.jar-openjdk:11-alpine'
 
             }
         }
