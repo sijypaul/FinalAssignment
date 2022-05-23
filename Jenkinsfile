@@ -7,8 +7,8 @@ pipeline
         {
             steps
             {
-              // bat "rmdir  /s /q assesmentfile"
-              bat "git clone https://github.com/sijypaul/FinalAssignment.git"
+             
+              //bat "git clone https://github.com/sijypaul/FinalAssignment.git"
                bat "mvn clean -f FinalAssignment "
             }
         }
