@@ -21,6 +21,14 @@ pipeline
                 echo "java -jar FinalAssignment/target/Employee-Management-System-Springboot-Project-0.0.1-SNAPSHOT.jar"
             }
         }
-        //echo ' docker build -t springio/Employee-Management-System-Springboot-Project-0.0.1-SNAPSHOT.jar-openjdk:11-alpine
+        
+         stage('Docker Image')
+        {
+            steps 
+            {
+                echo ' docker build -t springio/Employee-Management-System-Springboot-Project-0.0.1-SNAPSHOT.jar-openjdk:11-alpine
+
+            }
+        }
     }
 }
